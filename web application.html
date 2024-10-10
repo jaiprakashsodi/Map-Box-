@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Location-Based Service</title>
+    <link rel="stylesheet" href="web application.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="app">
+        <h1>Smart Location-Based Service</h1>
+        <div class="search-section">
+            <input type="text" id="search" placeholder="Enter location" />
+            <button onclick="searchLocation()">Search</button>
+            <div id="searchResults"></div>
+        </div>
+    
+
+        <div id="map"></div>
+
+        <div class="distance-section">
+            <h3>Calculate Distance</h3>
+            <input type="text" id="start-location" placeholder="Start Location">
+            <input type="text" id="end-location" placeholder="End Location">
+            <button onclick="calculateDistance()">Get Distance</button>
+            <div id="distanceResults"></div>
+        </div>
+
+        <div class="route-section">
+            <h3>Get Directions</h3>
+            <button onclick="getDirections()">Show Directions</button>
+            <div id="directionsResults"></div>
+        </div>
+    </div>
+    <script src="web application.js"></script>
+</body>
+</html>
